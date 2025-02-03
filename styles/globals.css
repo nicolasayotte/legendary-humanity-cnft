@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* If you need a custom font
+*
+  @font-face {
+    font-family: Proxima Nova;
+    font-weight: 500;
+    src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
+  }
+*/
+  :root {
+    --background: 166 65% 99%;
+    --foreground: 166 76% 1%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 30%;
+    --popover: 166 65% 99%;
+    --popover-foreground: 166 76% 1%;
+    --card: 166 65% 99%;
+    --card-foreground: 166 76% 1%;
+    --border: 166 5% 94%;
+    --input: 166 5% 94%;
+    --primary: 7, 62%, 17%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 3% 13%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 346 8% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 8 89% 25%;
+    --destructive-foreground: 8 89% 85%;
+    --mint-from: 30 57% 84%;
+    --mint-to: 30 47% 52%;
+    --minted-from: 354 12% 47%;
+    --minted-to: 354 55% 83%;
+    --destructive-foreground: 8 89% 85%;
+    --ring: 166 8% 44%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 166 40% 0%;
+    --foreground: 166 32% 100%;
+    --muted: 346 7% 9%;
+    --muted-foreground: 346 0% 68%;
+    --popover: 166 40% 0%;
+    --popover-foreground: 166 32% 100%;
+    --card: 166 40% 0%;
+    --card-foreground: 166 32% 100%;
+    --border: 166 5% 11%;
+    --input: 166 5% 11%;
+    --primary: 166 8% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 346 8% 44%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 346 8% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 8 89% 59%;
+    --destructive-foreground: 0 0% 0%;
+    --ring: 166 8% 44%;
+  }
+}
+.writing-v {
+  writing-mode: sideways-lr;
+}
+
+.transition-div {
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: all 2s ease;
+}
+
+.transition-div.animate {
+  @apply w-screen h-screen absolute inset-0;
+  transform: translate(0, 0) scale(1);
+}
+
+.transition-div:not(.animate) {
+  @apply relative w-auto h-auto;
+  transform: none;
+}
