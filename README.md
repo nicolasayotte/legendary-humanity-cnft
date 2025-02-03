@@ -5,7 +5,7 @@ Sell native tokens with multi-sig minting; where the backend server will build t
 # Legendary humanity project
 
       
-# Meshjs toolkig
+# Meshjs.dev toolkit
 
 ## [React components and hooks](https://meshjs.dev/react)
 
