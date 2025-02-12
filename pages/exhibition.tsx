@@ -32,18 +32,21 @@ export default function Home() {
       <main className="main">
         <div className="z-10 flex flex-col items-center">
           <div className="fixed left-4 top-[50vh]">
-            <MutedText className="text-gray-400">CURRENT MUSEUM</MutedText>
+            <MutedText className="text-xs xl:text-lg text-gray-400">
+              CURRENT
+              <br /> MUSEUM
+            </MutedText>
           </div>
 
           <div className="fixed right-4 top-[50vh]">
-            <MutedText className="text-right text-gray-400">
+            <MutedText className="text-xs xl:text-lg text-right text-gray-400">
               ON LH MUSEO
               <br />
               DECEMBER 2024
             </MutedText>
           </div>
 
-          <Section className="p-0 xl:h-screen">
+          <Section className="p-0 pt-12 xl:h-screen">
             <video className="w-full h-full object-cover" autoPlay>
               <source src="/videos/Still-A-Black-Star.mp4" type="video/mp4" />
             </video>
@@ -60,7 +63,7 @@ export default function Home() {
               src="/images/exhibition-main.png"
             />
 
-            <div className="flex flex-col w-full items-start p-20">
+            <div className="flex flex-col w-full items-start p-14 xl:p-20">
               <Heading>{'“MAGO MUSEUM” – A World First'}</Heading>
 
               <NormalText>

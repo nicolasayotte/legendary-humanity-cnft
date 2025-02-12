@@ -12,7 +12,7 @@ export const HugeText = ({ className, children }: any) => {
   return (
     <h1
       className={cn(
-        'font-poppins text-5xl xl:text-7xl font-light py-6',
+        'font-poppins text-3xl xl:text-7xl font-light py-6',
         className,
       )}
     >

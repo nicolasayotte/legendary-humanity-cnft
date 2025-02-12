@@ -11,6 +11,22 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         armata: ["Armata", "sans-serif"],
       },
+      fontSize: {
+        xs: '12px',
+        sm: '14px',
+        base: '16px',
+        lg: '18px',
+        xl: '20px',
+        '2xl': '22px',
+        '3xl': '24px',
+        '4xl': '28px',
+        '5xl': '32px',
+        '6xl': '36px',
+        '7xl': '40px',
+        '8xl': '48px',
+        '9xl': '70px',
+
+      },
       keyframes: {
         scaleUp: {
           '0%': { transform: 'translate(-50%, -50%) scale(0.1)', opacity: '0' },

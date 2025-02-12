@@ -21,7 +21,7 @@ const MenuFade = ({ name, href, hover, changeHover, children }: any) => {
   return (
     <div
       className={cn(
-        'transition-colors border border-background p-2 rounded-3xl hover:border-foreground',
+        'transition-colors border text-sm xl:text-base border-background p-2 rounded-3xl hover:border-foreground',
         {
           'text-muted': isNotHover,
           'text-primary': !isNotHover && pathname === href,
@@ -75,7 +75,7 @@ export const NavBar: React.FC<any> = () => {
             name="Wallet"
             href=""
           >
-            <div className="flex flex-row items-center justify-center cursor-pointer">
+            <div className="flex flex-row items-center text-sm xl:text-lg justify-center cursor-pointer">
               <WalletBalance />
             </div>
           </MenuFade>

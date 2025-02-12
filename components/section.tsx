@@ -4,7 +4,8 @@ export const Section = ({ className, children }: any) => {
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center relative min-w-full w-full px-8 py-4 xl:px-24 2xl:py-12 2xl:min-h-[80vh] bg-white',
+        'flex flex-col items-center justify-center relative min-w-full w-full',
+        'px-8 py-4 xl:px-24 2xl:py-12 2xl:min-h-[80vh] bg-white',
         className,
       )}
     >

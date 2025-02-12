@@ -2,12 +2,7 @@ import { Footer } from '@/components/footer';
 import { MintCard } from '@/components/mintCard';
 import { NavBar } from '@/components/navbar';
 import { HalfSection } from '@/components/section';
-import {
-  LargeText,
-  NormalText,
-  SectionTitle,
-  SmallerText,
-} from '@/components/text';
+import { LargeText, SectionTitle, SmallerText } from '@/components/text';
 import { Separator } from '@/components/ui/separator';
 import Head from 'next/head';
 
@@ -33,17 +28,17 @@ export default function Home() {
       </nav>
 
       <main className="main">
-        <div className="z-10 flex flex-col xl:flex-row xl:pt-16 items-center w-screen h-full xl:h-screen bg-secondary">
+        <div className="z-10 flex flex-col xl:flex-row xl:pt-16 w-screen h-full xl:min-h-screen bg-secondary">
           <HalfSection className="flex-row p-0">
-            <div className="hidden xl:flex xl:block h-full min-h-full flex-col justify-end p-4 xl:p-12 bg-primary">
+            <div className="hidden xl:flex xl:block min-h-screen h-full flex-col justify-start items-stretch p-4 xl:p-12 bg-primary">
               <img
-                className="min-w-[2.5rem] w-[2.5rem] xl:min-w-[4.2rem] xl:w-[4.2rem]"
+                className="min-w-[32px] w-[32px] xl:min-w-[52px] xl:w-[52px]"
                 src="/images/MAGO-LH-MUSEO.svg"
               />
             </div>
-            <div className="flex flex-col justify-end min-h-full h-full p-4 xl:p-12 bg-secondary">
+            <div className="flex flex-col justify-center xl:justify-start min-h-screen h-full p-4 xl:p-12">
               <img
-                className="min-w-[2.5rem] w-[2.5rem] xl:min-w-[3.5rem] xl:w-[3.5rem]"
+                className="min-w-[24px] w-[24px] xl:min-w-[48px] xl:w-[48px]"
                 src="/images/MAGO-LIVE-TICKET.svg"
               />
             </div>

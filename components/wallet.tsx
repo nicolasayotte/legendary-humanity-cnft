@@ -28,16 +28,14 @@ export const WalletBalance = () => {
   return connected && lovelace && wallet?.icon ? (
     <>
       <img className="h-8 w-8" src={wallet.icon} />
-      <span className="ml-2 text-lg leading-2 text-nowrap">
-        {lovelaceString}
-      </span>
+      <span className="ml-2 leading-2 text-nowrap">{lovelaceString}</span>
     </>
   ) : connected && wallet?.icon ? (
     <img className="h-6" src={wallet.icon} />
   ) : connecting ? (
-    <span className="text-lg leading-2 text-nowrap">Connecting...</span>
+    <span className="leading-2 text-nowrap">Connecting...</span>
   ) : (
-    <span className="text-lg leading-2 text-nowrap">Connect Wallet</span>
+    <span className="leading-2 text-nowrap">Connect Wallet</span>
   );
 };
 
