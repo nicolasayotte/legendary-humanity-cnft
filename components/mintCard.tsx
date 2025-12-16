@@ -29,7 +29,7 @@ export const MintCard = (props: { series: Series }) => {
   const { price, maxPerTx } = GetPolicyInfo(props.series);
 
   const openingDate = new Date('2024-12-25T07:00:00.000Z').valueOf();
-  const closingDate = new Date('2026-06-01T15:00:00.000Z').valueOf();
+  const closingDate = new Date('2025-12-16T15:00:00.000Z').valueOf();
   //const closingDate = new Date('2025-01-10T15:00:00.000Z').valueOf();
   const isNotOpen = Date.now() < openingDate;
   const isClosed = Date.now() > closingDate;

@@ -8,12 +8,12 @@ export function ParseSeries(s: string): Series | undefined {
 const PoliciesInfo: Record<Series, PolicyInfo> = {
   'MAGO MUSEUM Early Bird Pass': {
     profitsAddr: PROFITS_ADDR || 'obfuscated',
-    price: 2_000_000n,
+    price: 70_000_000n,
     maxPerTx: 10,
     network: NETWORK,
     fungible: true,
     lockDate: new Date('2026-06-10T15:00:00.000Z'),
-    slot: NETWORK === 'mainnet' ? '144954909' : '80838000', // harcorde the slots in case
+    //slot: NETWORK === 'mainnet' ? '144954909' : '80838000', // harcorde the slots in case
     accountIndex: 0,
     keyIndex: 0,
   },
