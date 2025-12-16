@@ -12,7 +12,7 @@ const PoliciesInfo: Record<Series, PolicyInfo> = {
     maxPerTx: 10,
     network: NETWORK,
     fungible: true,
-    lockDate: new Date('2025-01-10T15:00:00.000Z'),
+    lockDate: new Date('2026-06-10T15:00:00.000Z'),
     slot: NETWORK === 'mainnet' ? '144954909' : '80838000', // harcorde the slots in case
     accountIndex: 0,
     keyIndex: 0,
