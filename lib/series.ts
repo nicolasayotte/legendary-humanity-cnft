@@ -8,7 +8,7 @@ export function ParseSeries(s: string): Series | undefined {
 const PoliciesInfo: Record<Series, PolicyInfo> = {
   'MAGO MUSEUM Early Bird Pass': {
     profitsAddr: PROFITS_ADDR || 'obfuscated',
-    price: 70_000_000n,
+    price: 2_000_000n,
     maxPerTx: 10,
     network: NETWORK,
     fungible: true,
